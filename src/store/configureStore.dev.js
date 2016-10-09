@@ -5,7 +5,10 @@
 import {createStore, compose, applyMiddleware} from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunkMiddleware from 'redux-thunk';
+import createLogger from 'redux-logger';
 import rootReducer from '../reducers';
+
+const logger = createLogger();
 
 export default function configureStore(initialState) {
   const middlewares = [
@@ -17,6 +20,7 @@ export default function configureStore(initialState) {
     // thunk middleware can also accept an extra argument to be passed to each thunk action
     // https://github.com/gaearon/redux-thunk#injecting-a-custom-argument
     thunkMiddleware,
+    logger
   ];
 
   const store = createStore(rootReducer, initialState, compose(

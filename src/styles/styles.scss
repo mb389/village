@@ -1,0 +1,78 @@
+/* Variables */
+$text-primary: #4A4A4A;
+$text-secondary: #FFFFFF;
+$bg-primary: #F5CD23;
+$bg-secondary: #4A4A4A;
+$bg-tertiary: #FFFFFF;
+$border: #979797;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+$font-primary: 'Roboto', sans-serif;
+
+
+/* Styles */
+body {
+  font: 14px $font-primary;
+  // line-height: 1.4em;
+  color: $text-primary;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+td {
+	// padding: 12px;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+h2 {
+	color: $text-primary;
+}
+
+.village-button {
+  background-color: $bg-secondary;
+  color: $text-secondary;
+  border: 1px solid $border;
+  border-radius: 8px;
+  width: 220px;
+  height: 50px;
+  font-size: 15px;
+  margin: 30px 0px;
+}
+
+
+#nav {
+  padding: 10px 20px;
+  background: $bg-secondary;
+  font-weight: bold;
+  font-size: 18px;
+  color: $text-secondary;
+  border: 1px solid $border;
+  display: flex;
+  justify-content: space-between;
+}
+
+#splash {
+  text-align: center;
+  .splash-header {
+    background: $bg-primary;
+    padding: 20px;
+    p {
+      margin: 20px;
+    }
+  }
+  .splash-content {
+    background: $bg-tertiary;
+  }
+
+}
