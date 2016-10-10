@@ -1,2 +1,2 @@
-//example
-export const CALCULATE_FUEL_SAVINGS = 'CALCULATE_FUEL_SAVINGS';
+
+export const USER_REG = 'USER_REG';

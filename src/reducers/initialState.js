@@ -1,4 +1,6 @@
 export default {
-  data: {
+  user: {
+    email: '',
+    password: ''
   }
 };
