@@ -1,11 +1,16 @@
-import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import React from 'react';
+import { Link } from 'react-router';
 
-const GlobalNav = (props) => {
+const GlobalNav = () => {
   return (
     <div id="nav">
-      <Link to="/about">About</Link>
-      <IndexLink to="/">Log In</IndexLink>
+			<div className="left">
+	      <Link to="/about">About</Link>
+				<Link to="/">Home</Link>
+			</div>
+			<div className="right">
+      	<Link to="/login">Log In</Link>
+			</div>
     </div>
   );
 };

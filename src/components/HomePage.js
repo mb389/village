@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const HomePage = () => {
   return (
@@ -7,9 +9,13 @@ const HomePage = () => {
         <h1>Village</h1>
         <p>Child care is too expensive. So we’re trying to change that.</p>
         <p>Village will help you find the right family to share a nanny with. And it’s super easy.</p>
-        <button
-          className="village-button"
-          onClick={()=>{}}>Get Started For Free Now</button>
+        <Link to="signup">
+					<RaisedButton
+						label="Get Started For Free Now"
+						primary={true}
+						style={{ margin: '30px 0px'}}
+						onClick={()=>{ console.log('get started clicked!')}} />
+				</Link>
       </div>
       <div className="splash-content">
         <h1>How Does It Work?</h1>
